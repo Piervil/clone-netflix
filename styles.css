@@ -1,0 +1,139 @@
+/* RESET & MAIN STYLING */
+:root {
+	--negro: #131415;
+	--blanco: #fff;
+	--gris: #2d2d2d;
+	--btn-color: #e50914;
+	--btn-hover: #9f060d;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: var(--negro);
+	color: var(--blanco);
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 120rem;
+	margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .2rem 15rem;
+}
+
+.header__logo {
+	width: 17rem;
+}
+
+.navbar__menu {
+	display: flex;
+	gap: 4rem;
+	align-items: center;
+}
+
+.navbar__select {
+	padding: .8rem 2rem;
+	background-color: transparent;
+	color: var(--blanco);
+	border: 1px solid var(--blanco);
+	border-radius: .4rem;
+	font-weight: 500;
+}
+
+.navbar__option {
+	background-color: var(--gris);
+	color: var(--blanco);
+}
+
+.navbar__link {
+	background-color: var(--btn-color);
+	color: var(--blanco);
+	padding: .8rem 1.5rem;
+	border-radius: .4rem;
+}
+
+.navbar__link:hover {
+	background-color: var(--btn-hover);
+}
+
+/* HERO */
+.hero {
+	background: linear-gradient(to top,  rgb(0, 0, 0), rgba(99, 49, 49, 0.2)), url("img/backgroung.jpg") no-repeat bottom;
+	background-size: cover;
+	height: 50rem;
+}
+
+.hero__flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+	padding-top: 15rem;
+}
+
+.hero__title {
+	font-size: 5rem;
+}
+
+.hero__para {
+	font-size: 2.5rem;
+}
+
+.hero__form {
+	padding-top: 2rem;
+}
+
+.hero__input {
+	margin-right: 1.5rem;
+	padding: 1rem 6rem;
+	background: transparent;
+	backdrop-filter: blur(2px);
+	border: 1px solid var(--blanco);
+	border-radius: .4rem;
+	color: var(--blanco);
+	font-size: 1.8rem;
+}
+
+.hero__input::placeholder {
+	text-align: start;
+	color: var(--blanco);
+}
+
+.hero__get {
+	background-color: var(--btn-color);
+	color: var(--blanco);
+	font-size: 1.8rem;
+	padding: 1.1rem 5rem;
+	border-radius: .4rem;
+	border: none;
+	cursor: pointer;
+}
+
+.hero__get:hover {
+	background-color: var(--btn-hover);
+}
+
